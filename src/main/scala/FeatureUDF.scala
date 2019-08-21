@@ -6,8 +6,16 @@ import math.sqrt
 
 object FeatureUDF {
 
+  def addArrays (a: Array[Double], b: Array[Double]): Array[Double] = {
+    a.zip(b).map { case (x, y) => x + y}
+  }
+
   def subtractArrays (a: Array[Double], b: Array[Double]): Array[Double] = {
     a.zip(b).map { case (x, y) => x - y}
+  }
+
+  def l1Norm (a: Array[Double]): Double = {
+    a.sum
   }
 
   def l2Norm (a: Array[Double]): Double = {
