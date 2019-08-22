@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LibrarySuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-21T00:23:55" hostname="GRAHAMs-MacBook-Pro.local" time="0.019">
+<testsuite name="LibrarySuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-22T00:33:53" hostname="GRAHAMs-MacBook-Pro.local" time="0.029">
   <properties/>
-  <testcase name="someLibraryMethod is always true" classname="LibrarySuite" time="0.019"/>
+  <testcase name="someLibraryMethod is always true" classname="LibrarySuite" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

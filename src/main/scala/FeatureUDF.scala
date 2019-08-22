@@ -22,12 +22,32 @@ object FeatureUDF {
     sqrt(a.map(x => x * x).sum)
   }
 
-  def euclideanDistance (a: Vector, b: Vector): Double = {
-    l2Norm(subtractArrays(a.toArray, b.toArray))
+  def nonZeroIndices(a: Array[Double]): Array[Int] = {
+    a.zipWithIndex.collect{
+      case x if x._1 != 0.0 => x._2
+    }
+  }
+
+  def jaccardDistance(a: Array[Double], b: Array[Double]): Double = {
+    1 - (nonZeroIndices(a).intersect(nonZeroIndices(b)).length.toDouble/
+      nonZeroIndices(a).union(nonZeroIndices(b)).toSet.size.toDouble)
+  }
+
+  def euclideanDistance (a: Array[Double], b: Array[Double]): Double = {
+    l2Norm(subtractArrays(a, b))
+  }
+
+  def jaccardDistanceVector(a: Vector, b: Vector): Double = {
+    jaccardDistance(a.toArray, b.toArray)
+  }
+
+  def euclideanDistanceVector (a: Vector, b: Vector): Double = {
+    euclideanDistance(a.toArray, b.toArray)
   }
 
   def registerUdf: UserDefinedFunction = {
     val spark = SparkSession.builder().getOrCreate()
-    spark.udf.register("euclideanDistance", (a: Vector, b: Vector) => euclideanDistance(a, b))
+    spark.udf.register("euclideanDistance", (a: Vector, b: Vector) => euclideanDistanceVector(a, b))
+    spark.udf.register("jaccardDistance", (a: Vector, b: Vector) => jaccardDistanceVector(a, b))
   }
 }

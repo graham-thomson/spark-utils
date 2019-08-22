@@ -1,9 +1,14 @@
 products:
+   src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$addArrays$1.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$l2Norm$1.class
+   src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$nonZeroIndices$1.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$registerUdf$1.class
+   src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$registerUdf$2.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$anonfun$subtractArrays$1.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$typecreator1$1.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$typecreator2$1.class
+   src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$typecreator3$1.class
+   src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$$typecreator4$1.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF$.class
    src/main/scala/FeatureUDF.scala -> build/classes/main/FeatureUDF.class
    src/main/scala/Library.scala -> build/classes/main/Library.class
@@ -20,9 +25,14 @@ external dependencies:
 class names:
    src/main/scala/FeatureUDF.scala -> FeatureUDF
    src/main/scala/FeatureUDF.scala -> FeatureUDF$
+   src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$addArrays$1
    src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$l2Norm$1
+   src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$nonZeroIndices$1
    src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$registerUdf$1
+   src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$registerUdf$2
    src/main/scala/FeatureUDF.scala -> FeatureUDF$$anonfun$subtractArrays$1
    src/main/scala/FeatureUDF.scala -> FeatureUDF$$typecreator1$1
    src/main/scala/FeatureUDF.scala -> FeatureUDF$$typecreator2$1
+   src/main/scala/FeatureUDF.scala -> FeatureUDF$$typecreator3$1
+   src/main/scala/FeatureUDF.scala -> FeatureUDF$$typecreator4$1
    src/main/scala/Library.scala -> Library
